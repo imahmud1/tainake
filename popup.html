@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>tAi nAkE</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" type="text/css" href="compact-styles.css">
-        <script src="popup.js"></script>
-      </head>
-<body>
-  <div class="container">
-    <h1 class="animate__animated animate__bounceIn">tAi nAkE</h1>
-    
-    <section id="section1" class="animate__animated animate__fadeInLeft">
-      <h2>Random Capitalization</h2>
-      <div class="input-container">
-        <input type="text" id="input1" placeholder="Enter a sentence">
-        <button id="btnCapitalize">Capitalize</button>
+  <head>
+    <title>tAi nAkE</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="compact-styles.css">
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: center; /* Added to center the content horizontally */
+          margin-bottom: 20px;
+        }
+      
+        .icon-link {
+          margin-right: 8px;
+          color: #333;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      
+        .icon-link svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="https://imahmud1.github.io/tainake/" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <i class="fas fa-globe"></i>
+        </a>
+        <h1 class="animate__animated animate__bounceIn">tAi nAkE</h1>
       </div>
-      <div id="output1" class="output-container">
-        <input type="text" id="outputText1" readonly>
-        <button id="btnCopy1">Copy</button>
-        <span id="copyText1"></span>
-      </div>
-    </section>
-    
-    <section id="section2" class="animate__animated animate__fadeInRight">
-      <h2>Add Emojis</h2>
-      <div class="input-container">
-        <input type="text" id="input2" placeholder="Enter a sentence">
-        <button id="btnAddEmoji">Add Emojis</button>
-      </div>
-      <div id="output2" class="output-container">
-        <input type="text" id="outputText2" readonly>
-        <button id="btnCopy2">Copy</button>
-        <span id="copyText2"></span>
-      </div>
-    </section>
-  </div>
-</body>
+      
+      <section id="section1" class="animate__animated animate__fadeInLeft">
+        <h2>Random Capitalization</h2>
+        <div class="input-container">
+          <input type="text" id="input1" placeholder="Enter a sentence">
+          <button id="btnCapitalize">Capitalize</button>
+        </div>
+        <div id="output1" class="output-container">
+          <input type="text" id="outputText1" readonly>
+          <button id="btnCopy1">Copy</button>
+          <span id="copyText1"></span>
+        </div>
+      </section>
+      
+      <section id="section2" class="animate__animated animate__fadeInRight">
+        <h2>Add Emojis</h2>
+        <div class="input-container">
+          <input type="text" id="input2" placeholder="Enter a sentence">
+          <button id="btnAddEmoji">Add Emojis</button>
+        </div>
+        <div id="output2" class="output-container">
+          <input type="text" id="outputText2" readonly>
+          <button id="btnCopy2">Copy</button>
+          <span id="copyText2"></span>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
