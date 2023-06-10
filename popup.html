@@ -9,36 +9,50 @@
     <script src="popup.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        .header {
-          display: flex;
-          align-items: center;
-          justify-content: center; /* Added to center the content horizontally */
-          margin-bottom: 20px;
-        }
-      
-        .icon-link {
-          margin-right: 8px;
-          color: #333;
-          font-weight: bold;
-          text-decoration: none;
-        }
-      
-        .icon-link svg {
-          width: 20px;
-          height: 20px;
-          margin-right: 8px;
-        }
-      </style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .icon-link {
+        margin-right: 8px;
+        color: #333;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .icon-link svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="header">
+        <h1 class="animate__animated animate__bounceIn">tAi nAkE</h1>
+      </div>
+
+      <div class="icon-container">
         <a href="https://imahmud1.github.io/tainake/" target="_blank" rel="noopener noreferrer" class="icon-link">
           <i class="fas fa-globe"></i>
         </a>
-        <h1 class="animate__animated animate__bounceIn">tAi nAkE</h1>
+        <a href="https://github.com/imahmud1/tainake" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
-      
+
       <section id="section1" class="animate__animated animate__fadeInLeft">
         <h2>Random Capitalization</h2>
         <div class="input-container">
@@ -51,7 +65,7 @@
           <span id="copyText1"></span>
         </div>
       </section>
-      
+
       <section id="section2" class="animate__animated animate__fadeInRight">
         <h2>Add Emojis</h2>
         <div class="input-container">
